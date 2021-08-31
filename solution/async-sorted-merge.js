@@ -65,8 +65,8 @@ module.exports = (logSources, printer) => {
       console.log("Space Complexity is O(k), where k is the number of sources");
       console.log("Time Complexity is (virtually) O(k * log k * delay)");
       console.log("Note: This is extremely slow... Very slow.");
-      console.log("Reflection: In the README it is noted that we do NOT want to read into memory due to potentially large sizes.\n");
-      console.log("- However, we might see benefit by 'building' each source list in parallel into it's own binary min heap, then sorting the head of the heaps\n");
+      console.log("Reflection: In the README it is noted that we do NOT want to read into memory due to potentially large sizes.");
+      console.log("- However, we would see benefit by 'building' each source in parallel into their own binary min heap, then sorting by the root of the source heaps\n");
       resolve(console.log("Async sort complete."));
     });
   });
