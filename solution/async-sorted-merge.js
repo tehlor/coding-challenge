@@ -33,7 +33,6 @@ module.exports = (logSources, printer) => {
 
     async function printLogEntries() {
       while (watch.length != 0) {
-        console.log(watch.length)
         // Is the min source drained? Remove it and sort.
         if (watch[0].drained) {
           watch.shift();
